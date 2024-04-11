@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FT</title>
+    <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.css">
+</head>
+<body>
+    <style>
+        .round{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(200, 200, 228);
+            border-radius: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .text{
+            color: white;
+            display: flex;
+           justify-content: center;
+        }
+        #displayPlayers{
+            margin: 10px auto;
+            height: 50vh;
+            width: 80vw;
+        }
+    </style>
+    <h1>Football PITCH</h1>
+     <input type="text" id="player" placeholder="PlayersName">
+     <input type="text" id="number" placeholder="Player'sJersey">
+     <button class="btn btn-success" onclick="createPlayer()">Create Player</button>
+     <div id="displayPlayers" class="bg-success"></div>
+    <script>
+      class Players{
+            constructor(player, number){
+            this.player = player,
+            this.number = number
+        }
+        display(){
+               displayPlayers.innerHTML += `<div class ="round text-success">${this.player}
+                <p class = "text">${this.number}</p></div>`
+            }
+
+        }
+        const createPlayer = () => {
+            let displayFunc = new Players(player.value, number.value)
+            displayFunc.display()
+            this.player.value = ""
+            this.number.value = ""
+        }
+       
+         
+    </script>
+</body>
+</html>

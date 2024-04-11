@@ -1,0 +1,29 @@
+.round{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 200, 228);
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.round-two{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 200, 228);
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.text{
+    color: white;
+    display: flex;
+   justify-content: center;
+}
+#displayPlayers{
+    /* margin: 10px auto; */
+    height: 60vh;
+    width: 40vw;
+}
+       
+
+    
